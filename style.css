@@ -26,34 +26,96 @@ div{
     font-size: 40px;
     font-weight: bold;
     align-items: center;
+    margin: 15px;
 }
 
-.logo{
-    width: 80px;
-    height: 80px;
+.sidebar img{
     filter: brightness(0) invert(1);
+}
+
+.two img{
+    height: 30px;
+    width: 30px;
+}
+
+.three img{
+    height: 30px;
+    width: 30px;
+}
+
+.two,
+.three{
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    align-items: center;
+    gap: 15px;
+    margin-left: 30px;
 }
 
 .two{
     display: grid;
-    grid-template: repeat(6, 1fr) / 50px 1fr;
+    grid-template: repeat(6, 1fr) / 30px 1fr;
 }
 
 .three{
     display: grid;
-    grid-template: repeat(3, 1fr) / 50px 1fr;
+    grid-template: repeat(3, 1fr) / 30px 1fr;
 }
-
-
 
 
 
 /*header*/
 .header{
     grid-column: 2/3;
+    box-shadow: 0 6px 4px #94a3b8;
+    position: relative;
+    padding-top: 40px;
 }
 
+.row-one{
+    display: flex;
+    justify-content: space-around;
+}
+
+.left{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+input{
+    width: 800px;
+    height: 40px;
+    background-color: #e2e8f0;
+    border-radius: 20px;
+    border: 0px;
+}
+
+.right{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.row-one img{
+    height: 30px;
+    width: 30px;
+}
+
+.user-name{
+    font-weight: bold;
+    font-size: 25'px;
+}
+
+.profile-pic img{
+    width: 50px;
+    height: 50px;
+}
+
+/*main-content*/
 .main-content{
     grid-column: 2/3;
     grid-row: 2/3;
+    background-color: #e2e8f0;
 }
